@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>💖 For You 💖</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Soft loop music (starts only after user clicks) -->
+  <audio id="bgm" loop preload="auto">
+    <source src="assets/song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="card">
+    <h1 class="title">💘Hi my Dejah💘 </h1>
+    <p class="subtitle">I made this just for you.</p>
+
+    <!-- Photo -->
+    <img class="photo" src="assets/us.jpg" alt="Us together" />
+
+    <button id="cta" class="cta">click here</button>
+
+    <section id="question" class="question hidden" aria-live="polite">
+      <h2>Will you be my Valentine? 🌹</h2>
+
+      <div class="buttons">
+        <button id="yes" class="yes">YES 💘</button>
+        <button id="no" class="no">No 😔</button>
+      </div>
+
+      <p id="result" class="result"></p>
+
+      <!-- Music control -->
+      <button id="musicBtn" class="music hidden">🔊 music: off</button>
+    </section>
+
+    <footer class="footer">-Always You💝 </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
